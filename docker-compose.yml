@@ -4,7 +4,7 @@ services:
         restart: always
         build: .
         container_name: 'py3flask'
-        working_dir: '/root/'
+        working_dir: '/root/work'
         tty: true
         volumes:
             - .:/root/work

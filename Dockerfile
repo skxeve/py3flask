@@ -11,3 +11,6 @@ RUN git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
 RUN pip install --upgrade pip
 ADD requirements.txt /usr/local/py3c_env/requirements.txt
 RUN pip install -r   /usr/local/py3c_env/requirements.txt
+
+WORKDIR /root/work
+CMD ["python","main.py"]
